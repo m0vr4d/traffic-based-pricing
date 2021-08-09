@@ -14,6 +14,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
   <!--BACKGROUND leyout starts here-->
@@ -38,7 +39,7 @@
         <tl class="smallfont">PAGEVIEWS</tl>
       </td></table>
       <div class="wideslide">
-        <input type="range" name="slide" id="slide" class="myslide">
+        <input type="range" name="slide" id="slide" min="0" max="4" onchange="find();" class="myslide">
       </div>
       <table class="TR">
         <td>
@@ -56,7 +57,7 @@
     <div class="liner">
       <input type="button" onclick="monthly();" value="Monthly Billing">
       <label class="container">
-        <input type="checkbox" >
+        <input type="checkbox" id="mvy" onclick="reverse();" >
         <span class="checkmark"></span>
       </label>
       <input type="button" onclick="yearly();"  value="Yearly Billing">
@@ -71,7 +72,9 @@
         <img alt="check icon" src="images/icon-check.svg" style="margin:  1rem 0.4rem 0rem 0rem;">100% data ownership <br>
         <img alt="check icon" src="images/icon-check.svg" style="margin:  1rem 0.4rem 0rem 0rem;">Email reports       <br>
       </div>
-      <input type="button" value="Start my trial" class="start">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <input type="button" value="Start my trial" class="start">
+      </a>
     </div>
 
   </div>

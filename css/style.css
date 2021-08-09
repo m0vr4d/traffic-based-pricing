@@ -1,0 +1,329 @@
+:root{
+    --Soft-Cyan: hsl(174, 77%, 80%);
+    --Strong-Cyan: hsl(174, 86%, 45%);
+    --LGRed : hsl(14, 92%, 95%);
+    --LRed: hsl(15, 100%, 70%);
+    --Pale: hsl(226, 100%, 87%);
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(230, 100%, 99%);
+    --LGBlue1: hsl(224, 65%, 95%);
+    --LGBlue2: hsl(223, 50%, 87%);
+    --GBlue: hsl(225, 20%, 60%);
+    --DDBlue: hsl(227, 35%, 25%);
+}
+h2,
+body,
+p,
+div,
+input{
+    margin:0;
+    padding: 0;
+}
+
+
+body{
+
+    background-color: var(--PaleBlue);
+    font-family:Verdana, sans-serif; 
+    font-size: 15px;
+    color: var(--GBlue);
+
+}
+        /*  BACKGROUND styling starts here   */
+h2{
+    margin-top: 8rem;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+
+    color:var(--DDBlue);
+}
+
+P{
+    width: 70%;
+    
+}
+
+.myheader{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgcurve{
+    position: absolute;
+    width: 2000px;
+    height: 1000px;
+    transform: translate(0%,-55%);
+    border-radius: 14rem;
+    background-color: var(--LGBlue1);
+    z-index: -2;
+}
+
+.pattern{
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+    z-index: -1;
+}
+
+.center{
+    text-align: center;
+}
+        /*  BACKGROUND  styling  ends  here   */
+        
+        /*  MAIN BOX styling  starts  here   */
+
+
+.all{
+    margin-bottom: 10rem;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50%;
+    margin-top:5rem;
+    transform: translate(-50%,0%);
+    width: max(40%,255px);
+    background-color: var(--White);
+    border-radius: 1rem;
+    padding: 3rem 5%;
+    box-shadow: 0px 0px 1rem 0.5rem rgb(77, 77, 77,0.07);
+}
+
+                 /*  FIRST LINE styling  ends  here   */
+                 .wide{
+                     
+    width: 30%;
+    margin:1rem 0rem;
+}
+
+.smallfont{
+    line-height: 2.2em;
+}
+
+
+/*  FIRST LINE styling  ends  here   */ 
+
+/*  SECOND LINE styling starts here   */ 
+
+.wideslide{
+    margin-top: 3rem;
+    padding:min(7%,1rem);
+    
+}
+.myslide {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;  
+    background: hsla(0, 0%, 71%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.myslide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+    background: url('../images/icon-slider.svg'), var(--Strong-Cyan);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0.5rem 1rem 0.5rem hsla(174, 86%, 45%, 0.493);
+    cursor: pointer;
+}
+
+.myslide::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url('../images/icon-slider.svg') , var(--Strong-Cyan);
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem 1rem hsla(174, 86%, 45%, 0.712);
+}
+
+.myslide.slider-track::-moz-range-progress{
+    background-color: var(--Soft-Cyan);
+}
+
+
+input::-ms-fill-lower {
+    background: var(--Soft-Cyan);
+    border-radius: 0;
+}
+input::-ms-tooltip {
+    display: none;
+}
+.myslide:hover{
+    opacity: 1;
+}
+.TL{
+    position:absolute; top:2.5rem; left:2rem;
+}
+.TR{
+    position:absolute; top:2rem; right:2rem;
+}
+/*  SECOND LINE styling  ends  here   */ 
+
+/*  THIRD LINE styling starts here   */ 
+
+.liner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    margin:3rem 0px 0rem 0rem;
+}
+/* checkbox styling*/
+.container {
+    margin: 0px 10px 0px 4px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.2rem;
+    width: 2.6rem;
+    border-radius: 0.6rem;
+    background-color: rgba(212, 212, 212, 0.829);
+    opacity: 0.7;
+    -webkit-transition: .3s;
+    transition: opacity .3s;
+}
+
+.container:hover input ~ .checkmark {
+    opacity: 1;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: hsla(174, 86%, 45%, 0.493);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    -webkit-transition: .3s;
+    transition: .3s ;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+    transform: translate(1.5rem,.2rem);
+    background-color: hsl(173, 100%, 90%);
+    box-shadow: 0 0 3px 3px hsla(0, 0%, 100%, 0.226);
+}
+
+.container .checkmark:after {
+    width: .8rem;
+    height: .8rem;
+    border-radius: .4rem;
+    background-color: rgb(136, 136, 136);
+    transform: translate(.2rem,.2rem);
+    
+}
+/* checkbox styling END*/
+input[type=button]{
+    border-color: rgba(0, 0, 0, 0);
+    outline-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding:0;
+    color: var(--GBlue);
+}
+.discount{
+    font-size: 9px;
+    line-height: 13px;
+    margin-top: 0.2rem;
+    padding:0 5px;
+    border-radius: 20px;
+    background-color: var(--LGRed) ;
+    color:var(--LRed);
+    height:13px;
+}
+
+/*  THIRD LINE styling  ends  here   */ 
+
+
+/*  FOURTH LINE styling starts here  */
+
+.splet{
+    margin:1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}
+input[class=start]{
+    align-self: center;
+    margin-top: 0.3rem;
+    background-color: var(--DDBlue);
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0rem 2rem;
+    border-radius: 2rem;
+    color:var(--LGBlue2);
+}
+.start:hover{
+    color:var(--LGBlue1);
+}
+.cabs{
+    margin:1rem 0rem;
+}
+
+/*  FOURTH LINE styling  ends  here  */ 
+/*  MAIN BOX styling  ends  here   */
+
+/*  FIRST AND SECOND & display change FOR MOBILE */
+
+@media only screen and (max-width: 768px) {
+    .TL{
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .TR{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .discount span {
+        display: none;
+    }
+    .discount:after{
+        content: '-25%';
+    }
+    .liner{
+        flex-wrap: nowrap;
+        margin-left: -2.5%;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .cabs{
+        text-align: center;
+    }
+}

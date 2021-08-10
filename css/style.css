@@ -140,6 +140,11 @@ P{
     height: 25px;
     border-radius: 50%;
     background: url('../images/icon-slider.svg') , var(--Strong-Cyan);
+    
+    border-color: rgba(255, 255, 255, 0);
+    outline-color: rgba(255, 235, 205, 0);
+    background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;
     box-shadow: 0 0.5rem 1rem 1rem hsla(174, 86%, 45%, 0.712);
 }

@@ -11,7 +11,7 @@
     --GBlue: hsl(225, 20%, 60%);
     --DDBlue: hsl(227, 35%, 25%);
 }
-h2,
+h1,
 body,
 p,
 div,
@@ -30,11 +30,9 @@ body{
 
 }
         /*  BACKGROUND styling starts here   */
-h2{
+h1{
     margin-top: 8rem;
     margin-bottom: 0.5rem;
-    font-size: 20px;
-
     color:var(--DDBlue);
 }
 
@@ -84,7 +82,7 @@ P{
     margin-left: 50%;
     margin-top:5rem;
     transform: translate(-50%,0%);
-    width: max(40%,16.2rem);
+    width: max(30%,16.2rem);
     background-color: var(--White);
     border-radius: 1rem;
     padding: 3rem 5%;
@@ -298,9 +296,12 @@ input[class=start]{
 /*  FOURTH LINE styling  ends  here  */ 
 /*  MAIN BOX styling  ends  here   */
 
-/*  FIRST AND SECOND & display change FOR MOBILE */
+/*  display change FOR MOBILE */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1050px) {
+    h1{
+        font-size: 1.4em;
+    }
     .TL{
         left: 50%;
         transform: translate(-50%,0);
@@ -325,6 +326,5 @@ input[class=start]{
     .cabs{
         text-align: center;
     }
-    .all{
-        width:16.2rem;
+
 }

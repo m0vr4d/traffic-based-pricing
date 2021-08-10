@@ -84,7 +84,7 @@ P{
     margin-left: 50%;
     margin-top:5rem;
     transform: translate(-50%,0%);
-    width: max(40%,255px);
+    width: max(40%,16.2rem);
     background-color: var(--White);
     border-radius: 1rem;
     padding: 3rem 5%;

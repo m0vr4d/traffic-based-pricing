@@ -131,7 +131,7 @@ P{
     background: url('../images/icon-slider.svg'), var(--Strong-Cyan);
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0.5rem 1rem 0.5rem hsla(174, 86%, 45%, 0.493) ;
+    box-shadow: 0 0.5rem 1rem 0.5rem hsla(174, 86%, 45%, 0.493), -4rem 0 0 4rem var(--Strong-Cyan) ;
     cursor: pointer;
 }
 
@@ -146,7 +146,7 @@ P{
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    box-shadow: 0 0.5rem 1rem 0.5rem hsla(174, 86%, 45%, 0.493) ;
+    box-shadow: 0 0.5rem 1rem 0.5rem hsla(174, 86%, 45%, 0.493) , -4rem 0 0 4rem var(--Strong-Cyan) ;
 }
 
 .myslide:hover{

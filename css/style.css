@@ -149,23 +149,6 @@ P{
     box-shadow: 0 0.5rem 1rem 0.5rem hsla(174, 86%, 45%, 0.493) , -100rem 0 0 100rem var(--Strong-Cyan);
 }
 
-.myslide.slider-track::-moz-range-progress{
-    background-color: var(--Soft-Cyan);
-}
-
-input[type="range"]::-ms-fill-lower {
-  background-color: var(--Soft-Cyan); 
-}
-input[type="range"]::-moz-range-progress {
-  background-color: var(--Soft-Cyan); 
-}
-input::-ms-fill-lower {
-    background: var(--Soft-Cyan);
-    border-radius: 0;
-}
-input::-ms-tooltip {
-    display: none;
-}
 .myslide:hover{
     opacity: 1;
 }
